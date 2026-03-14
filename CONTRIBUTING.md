@@ -1,12 +1,12 @@
-# Contributing to {{info.slug}}_spa_utils
+# Contributing to impact_spa_utils
 
-Thank you for contributing to {{info.slug}}_spa_utils! This guide will help you get started.
+Thank you for contributing to impact_spa_utils! This guide will help you get started.
 
 ## Development Setup
 
 ### Prerequisites
 
-- {{info.name}} [Developers Edition]({{org.git_host}}/{{org.git_org}}/{{info.slug}}/blob/main/CONTRIBUTING.md)
+- Creators Dashboard [Developers Edition](https://github.com/agile-crafts-people/impact/blob/main/CONTRIBUTING.md)
 
 ### Getting Started
 
@@ -27,7 +27,7 @@ npm run test:coverage
 npm run test:ui
 
 # Run Dev Server (demo app)
-# Assumes api_utils dev server running at localhost:{{ api_utils.port }}
+# Assumes api_utils dev server running at localhost:9094
 npm run dev
 
 # Cypress E2E tests (interactive)
@@ -40,7 +40,7 @@ npm run cypress:run
 ## Project Structure
 
 ```
-{{info.slug}}_spa_utils/
+impact_spa_utils/
 ├── src/
 │   ├── composables/     # Reusable composables
 │   ├── components/      # Vue components
@@ -129,7 +129,7 @@ npm run publish:manual
 
 ## Code Standards
 
-- Follow the [SPA Standards]({{org.git_host}}/{{org.git_org}}/{{info.slug}}/blob/main/DeveloperEdition/standards/spa_standards.md)
+- Follow the [SPA Standards](https://github.com/agile-crafts-people/impact/blob/main/DeveloperEdition/standards/spa_standards.md)
 - Use TypeScript for type safety
 - Add automation IDs (`data-automation-id`) to all interactive elements
 - Follow existing code patterns and conventions
@@ -137,7 +137,7 @@ npm run publish:manual
 
 ## Demo App
 
-The demo app provides a full flow: **login** → **component demos** (with hamburger **navigation drawer**) → **admin page** (config) when user has `admin` role. It uses the [api_utils]({{org.git_host}}/{{org.git_org}}/api_utils) dev server for `/dev-login` and `/api/config`.
+The demo app provides a full flow: **login** → **component demos** (with hamburger **navigation drawer**) → **admin page** (config) when user has `admin` role. It uses the [api_utils](https://github.com/agile-crafts-people/api_utils) dev server for `/dev-login` and `/api/config`.
 
 - **Login:** [demo/pages/LoginPage.vue](./demo/pages/LoginPage.vue) — developer login form
 - **Layout & nav:** [demo/App.vue](./demo/App.vue) — app bar, hamburger, drawer (demo / admin / logout)

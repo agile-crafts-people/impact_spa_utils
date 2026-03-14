@@ -48,7 +48,7 @@ jobs:
           fi
           
           # Create .npmrc in project root with actual token value
-          echo "@agile-learning-institute:registry=https://npm.pkg.github.com" > .npmrc
+          echo "@agile-crafts-people:registry=https://npm.pkg.github.com" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=$GH_PAT" >> .npmrc
       
       - name: Install dependencies
@@ -106,7 +106,7 @@ jobs:
         run: |
           echo "Package published successfully!"
           echo "Version: ${{ steps.version_check.outputs.version }}"
-          echo "Package: @agile-learning-institute/mentorhub_spa_utils@${{ steps.version_check.outputs.version }}"
+          echo "Package: @agile-crafts-people/impact_spa_utils@${{ steps.version_check.outputs.version }}"
       
       - name: Fail if version not bumped
         if: steps.version_check.outputs.changed == 'false'

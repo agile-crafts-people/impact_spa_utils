@@ -1,5 +1,5 @@
 {
-  "name": "@{{org.git_org}}/{{info.slug}}_spa_utils",
+  "name": "@agile-crafts-people/impact_spa_utils",
   "version": "0.1.0",
   "type": "module",
   "description": "Reusable Vue 3 + Vuetify components, composables, and utilities",
@@ -50,7 +50,7 @@
     "build-publish": "npm install --include=dev && npm run build && npm publish",
     "build-package": "npm install --include=dev && npm run build",
     "publish-package": "npm publish",
-    "delete-package": "gh api -X DELETE /orgs/{{org.git_org}}/packages/npm/{{info.slug}}_spa_utils"
+    "delete-package": "gh api -X DELETE /orgs/agile-crafts-people/packages/npm/impact_spa_utils"
   },
   "dependencies": {
     "vue": "^3.5.13",
@@ -80,7 +80,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "{{org.git_host}}/{{org.git_org}}/{{info.slug}}_spa_utils.git"
+    "url": "https://github.com/agile-crafts-people/impact_spa_utils.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
