@@ -10,10 +10,10 @@ export default defineConfig({
     }
   },
   server: {
-    port: {{ spa_utils.port }},
+    port: 9093,
     proxy: {
       '/api': {
-        target: 'http://localhost:{{ api_utils.port }}',
+        target: 'http://localhost:9092',
         changeOrigin: true
       }
     }
